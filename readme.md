@@ -38,19 +38,20 @@ python main.py --mode grad_cam --pre_trained_model ./model/model_best_on_val --t
 - The number of parameters : 2,952,928 (less than 3M)
 - Top 1 accuracy(test data) : 78.3%
 - I used learning rate scheduling
+(49-th line in res_model.py)
 - I used two data augmentation
-
 1) With random horizontal flip 
 2) With single scale jittering
-
+(The functions (data_aug(), extract_patch() in util.py)
 - I used separate training set, validataion set, and test set
+(The function split_data() in util.py)
 
 ## Experimental Results
 <img src = "images/train_acc.png" height = "250px">
 <img src = "images/train_loss.png" height = "250px">
-For each train batch, these are the train accuracy / train loss graphs 
+For each train batch, these are the train accuracy and train loss graphs 
 
-If you want to see these result in tensorboard,
+If you want to see these results in tensorboard,
 ```
 tensorboard --logdir=./log
 ```
