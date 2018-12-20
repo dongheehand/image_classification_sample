@@ -39,7 +39,7 @@ python main.py --mode grad_cam --pre_trained_model ./model/model_best_on_val --t
 - Top 1 accuracy(test data) : 78.3%
 - I used learning rate scheduling
 (49-th line in res_model.py)
-- I used two data augmentation(The functions (data_aug(), extract_patch() in util.py)
+- I used two data augmentation(The functions (data_aug(), extract_patch()) in util.py)
 
 1) With random horizontal flip 
 2) With single scale jittering
