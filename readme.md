@@ -84,3 +84,4 @@ Wrongly predicted samples
 [2] https://github.com/cydonia999/Grad-CAM-in-TensorFlow
 
 - The function save_cam in util.py is borrowed from [2]
+https://docs.google.com/presentation/d/1Haif-xkBMtievMYXFxCvrfVHGE4IzUO0kFPwIP1hSMk/edit?usp=sharing 
