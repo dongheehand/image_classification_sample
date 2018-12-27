@@ -60,7 +60,7 @@ tensorboard --logdir=./log
 log.txt in log directory : Training log file, which measured every epoch for total train data and validation data 
 
 ## Grad Cam Results
-옳게 예측된 데이터
+Correctly predicted samples
 
 | Input | Grad cam |
 | --- | --- |
@@ -68,15 +68,13 @@ log.txt in log directory : Training log file, which measured every epoch for tot
 | <img src="images/real_data/True_0521.png"> |<img src="images/grad_cam/True_0521.png">|
 | <img src="images/real_data/True_2163.png"> |<img src="images/grad_cam/True_2163.png">|
 
-틀리게 예측된 데이터
+Wrongly predicted samples
 
 | Input | Grad cam |
 | --- | --- |
 | <img src="images/real_data/False_0657.png"> |<img src="images/grad_cam/False_0657.png">| 
 | <img src="images/real_data/False_1457.png"> |<img src="images/grad_cam/False_1457.png">|
 | <img src="images/real_data/False_2584.png"> |<img src="images/grad_cam/False_2584.png">|
-
-분석 : 올바르게 예측한 데이터의 경우, model이 image를 예측하기 적합한 곳에 강한 activation을 주었음을 알 수 있다. 예를들어, 동물의 몸통을 포함하는 전체적인 부분이나 동물의 얼굴부분에 강한 activation을 주었음을 위의 데이터를 통해 알 수 있다. 틀리게 예측한 데이터에 대해서는 model이 배경이나, 몸통의 극히 일부 혹은 classification에 도움되지않는 발 끝부분 등에 강한 activation을 주었음을 알 수 있다.
 
 ## Reference
 [1] https://github.com/mttk/STL10
